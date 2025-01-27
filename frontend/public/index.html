@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Luca Brizuela Full-Stack Banking Application</title>
+  
+  <!-- Description for SEO -->
+  <meta name="description" content="Luca Brizuela's Full-Stack Banking Application - Manage your account, deposits, withdrawals, and balance securely." />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  
+  <!-- Open Graph Protocol for social media -->
+  <meta property="og:title" content="Luca Brizuela Full-Stack Banking Application" />
+  <meta property="og:description" content="A secure and efficient banking platform built using the MERN stack by Luca Brizuela." />
+  <meta property="og:image" content="%PUBLIC_URL%/banking-preview.png" />
+  <meta property="og:url" content="https://lucabrizuela-bankingapp.example.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card Data -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Luca Brizuela Full-Stack Banking Application" />
+  <meta name="twitter:description" content="A full-stack banking platform built with MERN by Luca Brizuela." />
+  <meta name="twitter:image" content="%PUBLIC_URL%/banking-preview.png" />
+  
+  <!-- Style Reset -->
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset" />
+  
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="%PUBLIC_URL%/index.css" />
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Root Element for React -->
+  <div id="root"></div>
+
+  <!-- No-JS Message -->
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+
+  <!-- Environment Variable Substitution -->
+  <script>
+    window.env = {
+      NODE_ENV: "%NODE_ENV%",
+      API_URL: "%PUBLIC_URL%/api",
+    };
+  </script>
+</body>
+</html>
