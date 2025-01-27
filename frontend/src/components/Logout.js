@@ -14,7 +14,7 @@ function Logout() {
       const token = localStorage.getItem('token');
       if (token) {
         // Call logout endpoint to blacklist the token
-        await fetch('http://localhost:3000/api/user/logout', {
+        await fetch('http://137.184.15.190:3001/api/user/logout', {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${token}`,

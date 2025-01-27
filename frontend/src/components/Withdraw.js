@@ -27,7 +27,7 @@ function Withdraw() {
         return;
       }
 
-      const response = await fetch("http://localhost:3000/api/user/transactions", {
+      const response = await fetch("http://137.184.15.190:3001/api/user/transactions", {
         method: "PUT",
         headers: {
           'Content-Type': 'application/json',

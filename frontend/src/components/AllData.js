@@ -12,7 +12,7 @@ function AllData() {
 
   const fetchUsers = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/users');
+      const response = await fetch('http://137.184.15.190:3001/api/users');
       if (!response.ok) throw new Error('Failed to fetch users');
       const data = await response.json();
       setUsers(data);

@@ -14,7 +14,7 @@ function Login() {
       const token = localStorage.getItem('token');
       if (token && !currentUser) {
         try {
-          const response = await fetch("http://localhost:3000/api/users/validate", {
+          const response = await fetch("http://137.184.15.190:3001/api/users/validate", {
             headers: {
               'Authorization': `Bearer ${token}`
             }
@@ -46,7 +46,7 @@ function Login() {
 
   const handleLogin = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/users/login", {
+      const response = await fetch("http://137.184.15.190:3001/api/users/login", {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({email, password}),
@@ -73,7 +73,7 @@ function Login() {
       const idToken = await result.user.getIdToken();
       
       // Verify with your backend
-      const response = await fetch("http://localhost:3000/api/users/google-login", {
+      const response = await fetch("http://137.184.15.190:3001/api/users/google-login", {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({ idToken }),

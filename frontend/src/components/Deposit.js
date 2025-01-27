@@ -6,7 +6,7 @@ function Deposit() {
   const [amount, setAmount] = useState('');
   const [warning, setWarning] = useState('');
 
-  console.log(currentUser); 
+   
 
   if (!currentUser) {
     return (
@@ -29,7 +29,7 @@ function Deposit() {
       setWarning('You must be logged in to make a deposit.'); 
       return; 
     }
-    const response = await fetch("http://localhost:3000/api/user/transactions", {
+    const response = await fetch("http://137.184.15.190:3001/api/user/transactions", {
       method: "PUT", 
       headers: {
         'Content-Type': 'application/json',

@@ -28,7 +28,7 @@ function CreateAccount() {
     }
 
     try {
-      const response = await fetch('http://localhost:3000/api/users/create', {
+      const response = await fetch('http://137.184.15.190:3001/api/users/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
